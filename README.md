@@ -3,7 +3,7 @@
 ![](axa-doc/images/axxalogo.JPG)
 
 A project by: 
-*Albet Fuente*
+*Albet Fuente Homs*
 
 
 ## INTRODUCTION
