@@ -1,19 +1,17 @@
 const {validate} = require('axa-utils')
 const {models:{User} } = require('axa-data')
 
-
-/**
+ /**
  * Registers a new user
  * 
- * @param {*} id 
- * @param {*} name 
- * @param {*} email 
- * @param {*} role
+ * @param {string} id - the id of the Client
+ * @param {string} name - the name of the Client
+ * @param {string} email - the email of the Client
+ * @param {string} role - the role of the Client
  * 
+ * @throws {Error} - if User already exists
  * 
- * @throws {Error} - if email already exists.
- * 
- * @returns {Object} - user
+ * @returns {Object} - returns the Client
  */
 
 module.exports = function(id, name, email, role) {

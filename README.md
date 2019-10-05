@@ -1,9 +1,9 @@
 # AXA API
 
-![](axa-doc/images/axxalogo.JPG)
+![](axa-doc/images/policies.PNG)
 
 A project by: 
-*Albet Fuente Homs*
+*Albet Fuente*
 
 
 ## INTRODUCTION
@@ -29,39 +29,39 @@ In order to run the API use the command node . inside the axa-api folder.
 
 Admin case
 
-![](skyshop-doc/images/admin-usecases.PNG)
+![](axa-doc/images/usecasesAdmin.PNG)
 
 User case
 
-![](skyshop-doc/images/user-usecases.PNG)
+![](axa-doc/images/usecasesClient.PNG)
 
 **FLOW CHART**
 
 Admin
 
-![](skyshop-doc/images/flow-chart-admin.PNG)
+![](axa-doc/images/flowChartAdmin.PNG)
 
 User
 
-![](skyshop-doc/images/flow-chart-user.PNG)
+![](axa-doc/images/flowChartUser.PNG)
 
 ## Technical description
 
-**BLOCK DIAGRAM**
+<!-- **BLOCK DIAGRAM**
 
-![](skyshop-doc/images/BlockDiagram.PNG)
+![](axa-doc/images/BlockDiagram.PNG)
 
 **COMPONENTS**
 
-![](skyshop-doc/images/components-final.PNG)
+![](axa-doc/images/components-final.PNG)
 
 **DATA MODEL**
 
-![](skyshop-doc/images/dataModelUpdate.PNG)
+![](axa-doc/images/dataModelUpdate.PNG) -->
 
 **CODE COVERAGE**
 
-![Coverage](https://img.shields.io/badge/Coverage-96%25-green.svg)
+<!-- ![Coverage](https://img.shields.io/badge/Coverage-96%25-green.svg) -->
 
 
 ![](skyshop-doc/images/test-coverage-api.PNG)

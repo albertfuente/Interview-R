@@ -11,6 +11,16 @@ const {models:{User} } = require('axa-data')
  * @returns {Object}
 */
 
+ /**
+ * Retreives one user
+ * 
+ * @param {string} id - the id of the Client
+ * 
+ * @throws {Error} - if User does not exist
+ * 
+ * @returns {string} - returns the Client id
+ */
+
 module.exports = function(id) {
     
     validate.string(id, 'id')

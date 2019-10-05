@@ -4,15 +4,19 @@ const{models:{User,Policie}}=require('axa-data')
 /**
  * Retrieves the user linked to a policie number 
  * 
- * @param {*}
+ * @param {string} id - the id of the Policie
+ * 
+ * @throws {Error} - if Policie does not exist
+ * @throws {Error} - if User with id does not exist
+ * 
+ * @returns {string} - returns the name of the user
  */
 
  module.exports=function(id){
      validate.string(id,'id')
 
      return(async()=>{
-         //const policie=await Policie.findById(policieId)
-         //TODO FIND BY POLICIE ID INITIAL
+ 
          const policie=await Policie.findOne({id:id})
          if(!policie) throw Error('Policie does not exist')
 

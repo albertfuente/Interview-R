@@ -1,12 +1,15 @@
 const {validate}=require('axa-utils')
 const{models:{User,Policie}}=require('axa-data')
 
-/**
- * Retrieves a list of policies link to a user name
+ /**
+ * Retrieves a list of policies link to a user name 
  * 
- * @param {*}
+ * @param {string} clientName - the name of the Client
  * 
+ * @throws {Error} - if User does not exist
+ * @throws {Error} - if no Policies ara available for that client
  * 
+ * @returns {Object} - returns the policies for the user
  */
 
  module.exports=function(clientName){

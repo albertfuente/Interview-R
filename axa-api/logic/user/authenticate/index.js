@@ -1,17 +1,18 @@
 const {validate} = require('axa-utils')
 const {models:{User} } = require('axa-data')
 
+
  /**
- * Authenticates a user 
+ * Authenticates a user
  * 
- * @param {*} id 
- * @param {*} email 
- *  
+ * @param {string} id - the id of the Client
+ * @param {string} email - the email of the Client
+ * 
  * @throws {Error} - if user does not exists.
  * @throws {Error} - if password does not match.
  * 
- * @returns {String}
-*/
+ * @returns {String} - returns the user id as the Object id
+ */
 
 module.exports = function(id, email) {
   
