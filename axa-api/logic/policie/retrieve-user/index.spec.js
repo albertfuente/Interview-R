@@ -6,7 +6,7 @@ const{database,models:{User,Policie}}=require('axa-data')
 
 const{env:{DB_URL_TEST}}=process
 
-describe.only('logic- retrieve user',()=>{
+describe('logic- retrieve user from policie',()=>{
     before(()=>database.connect(DB_URL_TEST))
 
     let id, name, email, role
@@ -39,36 +39,35 @@ describe.only('logic- retrieve user',()=>{
         const policie=await retrievePolicieUser(policieId)
         
         expect(policie).to.exist
-       /*  expect(policie[0].amountInsured).to.equal(amountInsured)
-        expect(policie[0].installmentPayment).to.equal(installmentPayment)
-        expect(policie[0].clientId).to.equal(clientId)  */
+        expect(policie).to.equal(name)
+       
     })
-/*     it('should fail if the User does not exist', async()=>{
+     it('should fail if the User does not exist', async()=>{
         await User.deleteMany()
 
         try{
-            await policieId(name)
+            await retrievePolicieUser(policieId)
         }catch(error){
             expect(error).to.exist
-            expect(error.message).to.equal(`User does not exist`)
+            expect(error.message).to.equal('Policie does not exist')
         }
-    }) */
+    }) 
 
-    it('should fail on empty policieId', () =>
+    it('should fail on empty id', () =>
     expect(() =>
     retrievePolicieUser('')
-    ).to.throw('policieId is empty or blank')
+    ).to.throw('id is empty or blank')
     )
-    it('should fail on undefined policieId', () =>
+    it('should fail on undefined id', () =>
         expect(() =>
         retrievePolicieUser(undefined)
 
-        ).to.throw(`policieId with value undefined is not a string`)
+        ).to.throw(`id with value undefined is not a string`)
     )
-    it('should fail on wrong policieId', () =>
+    it('should fail on wrong id', () =>
     expect(() =>
     retrievePolicieUser(124)
-    ).to.throw(`policieId with value 124 is not a string`)
+    ).to.throw(`id with value 124 is not a string`)
     )
 
 })

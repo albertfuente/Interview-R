@@ -7,10 +7,10 @@ A project by:
 
 
 ## INTRODUCTION
-This is a REST API that manages information regarding insurance policies and company clients.
+This is a REST APP that manages information regarding insurance policies and company clients.
 There is a lits of company clients and a list of company policies.
 
-This API can:
+The API can:
 * register clients an authenticate them.
 * register policies.
 
@@ -21,6 +21,7 @@ With the database of clients and policies the API can:
 * retrieve the user linked to a policy number (only users with role admin)
 
 In order to run the API use the command node . inside the axa-api folder.
+In order to run the APP use the command yarn start inside the axa-app folder.
 
 
 ## Functional description
@@ -47,9 +48,9 @@ User
 
 ## Technical description
 
-<!-- **BLOCK DIAGRAM**
+**BLOCK DIAGRAM**
 
-![](axa-doc/images/BlockDiagram.PNG)
+![](axa-doc/images/block.PNG)
 
 **COMPONENTS**
 
@@ -57,15 +58,17 @@ User
 
 **DATA MODEL**
 
-![](axa-doc/images/dataModelUpdate.PNG) -->
+![](axa-doc/images/dataModel.PNG)
 
 **CODE COVERAGE**
 
-<!-- ![Coverage](https://img.shields.io/badge/Coverage-96%25-green.svg) -->
+![Coverage](https://img.shields.io/badge/Coverage-97%25-green.svg)
 
 
-![](skyshop-doc/images/test-coverage-api.PNG)
+![](axa-doc/images/coverage.PNG)
 
 **TECHNOLOGIES**
 
-Node.js, Express,Mocha Chai, MongoDB & Mongoose.
+Back end: Node.js, Express,Mocha Chai, MongoDB & Mongoose.
+
+Front end: Node.js, React, Sass

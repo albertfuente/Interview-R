@@ -3,7 +3,7 @@ const logic = require('../../logic')
 module.exports = async(req, res)=> {
 
     const {params: { clientName} } = req
-    debugger
+    
 
     try {
         await logic.policie.retrieveList(clientName)

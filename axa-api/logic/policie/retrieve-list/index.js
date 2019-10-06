@@ -23,12 +23,14 @@ const{models:{User,Policie}}=require('axa-data')
         if(user.role=='admin'){
             const policies= await Policie.find({}).lean()
             if(!policies) throw Error('No policies available')
+            
 
-            policies.forEach(items=>{
-                items.id=items._id.toString()
-                delete items._id
+            const result=policies.filter(items=>{
+                /* items.id=items._id.toString()
+                delete items._id */
+                return items.clientId===user.id
             })
-            return policies
+            return result
 
         }else{
             throw Error('You have no admin rights')

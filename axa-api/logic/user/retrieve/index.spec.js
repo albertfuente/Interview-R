@@ -1,7 +1,7 @@
 require('dotenv').config() 
 const { expect } = require('chai')
 const retrieve=require('.')
-const {database, models:{User} } = require('-data')
+const {database, models:{User} } = require('axa-data')
 
 const{env: {DB_URL_TEST}}=process 
 
