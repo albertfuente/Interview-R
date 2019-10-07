@@ -5,6 +5,8 @@ import retrieveUserId from './retrieve-user-id'
 import retrieveUserName from './retrieve-user-name'
 import retrievePolicie from './retrieve-policie'
 import retrievePolicieName from './retrieve-policie-user'
+import registerUser from './register-user'
+import registerPolicie from './register-policie'
 
 
 
@@ -23,6 +25,8 @@ export default{
     retrieveUserId,
     retrieveUserName,
     retrievePolicie,
-    retrievePolicieName
+    retrievePolicieName,
+    registerUser,
+    registerPolicie
 }
 

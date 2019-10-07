@@ -16,7 +16,7 @@ router.get('/retrieve/:id', [tokenMiddleware, jsonBodyParser], retrieveUserId)
 router.get('/retrieveName/:id', [tokenMiddleware, jsonBodyParser], retrieveUserName)
 
 /* POLICIE */
-router.post('/policies/:clientId', jsonBodyParser, registerPolicie)
+router.post('/policies', jsonBodyParser, registerPolicie)
 router.get('/retrieveList/:clientName', retrieveList)
 router.get('/retrieveUser/:policieId', retrievePolicieUser)
 

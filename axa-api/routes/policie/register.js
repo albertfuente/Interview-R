@@ -2,7 +2,7 @@ const logic = require('../../logic')
 
 module.exports = async(req, res) =>{
 
-    const { body: {id,amountInsured,email,inceptionDate,installmentPayment }, params:{clientId} } = req
+    const { body: {id,amountInsured,email,inceptionDate,installmentPayment,clientId } } = req
     try {
         debugger
         await logic.policie.register(id,amountInsured,email,inceptionDate,installmentPayment,clientId)
