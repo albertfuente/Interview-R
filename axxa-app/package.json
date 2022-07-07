@@ -5,7 +5,7 @@
   "dependencies": {
     "axxa-utils": "file:../axxa-utils",
     "hookrouter": "^1.2.3",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "node-sass": "^4.12.0",
     "react": "^16.9.0",
     "react-countdown-now": "^2.1.1",
